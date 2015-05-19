@@ -1,0 +1,1156 @@
+ERROR [main] 2015-05-18 23:59:57,462 TableMetadata.java:123 - Error parsing schema options for table system.IndexInfo: Cluster.getMetadata().getKeyspace("system").getTable("IndexInfo").getOptions() will return null
+java.lang.IllegalArgumentException: populate_io_cache_on_flush is not a column defined in this metadata
+	at com.datastax.driver.core.ColumnDefinitions.getAllIdx(ColumnDefinitions.java:273) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ColumnDefinitions.getFirstIdx(ColumnDefinitions.java:279) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ArrayBackedRow.isNull(ArrayBackedRow.java:56) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata$Options.<init>(TableMetadata.java:529) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata.build(TableMetadata.java:119) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.buildTableMetadata(Metadata.java:131) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.rebuildSchema(Metadata.java:92) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.refreshSchema(ControlConnection.java:293) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.tryConnect(ControlConnection.java:230) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.reconnectInternal(ControlConnection.java:170) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.connect(ControlConnection.java:78) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster$Manager.init(Cluster.java:1029) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.init(Cluster.java:120) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:197) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:225) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.example.Main.main(Main.java:32) ~[main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0-ea]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.8.0-ea]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0-ea]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0-ea]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) ~[idea_rt.jar:na]
+ERROR [main] 2015-05-18 23:59:57,471 TableMetadata.java:123 - Error parsing schema options for table system.batchlog: Cluster.getMetadata().getKeyspace("system").getTable("batchlog").getOptions() will return null
+java.lang.IllegalArgumentException: populate_io_cache_on_flush is not a column defined in this metadata
+	at com.datastax.driver.core.ColumnDefinitions.getAllIdx(ColumnDefinitions.java:273) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ColumnDefinitions.getFirstIdx(ColumnDefinitions.java:279) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ArrayBackedRow.isNull(ArrayBackedRow.java:56) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata$Options.<init>(TableMetadata.java:529) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata.build(TableMetadata.java:119) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.buildTableMetadata(Metadata.java:131) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.rebuildSchema(Metadata.java:92) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.refreshSchema(ControlConnection.java:293) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.tryConnect(ControlConnection.java:230) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.reconnectInternal(ControlConnection.java:170) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.connect(ControlConnection.java:78) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster$Manager.init(Cluster.java:1029) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.init(Cluster.java:120) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:197) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:225) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.example.Main.main(Main.java:32) ~[main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0-ea]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.8.0-ea]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0-ea]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0-ea]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) ~[idea_rt.jar:na]
+ERROR [main] 2015-05-18 23:59:57,473 TableMetadata.java:123 - Error parsing schema options for table system.compaction_history: Cluster.getMetadata().getKeyspace("system").getTable("compaction_history").getOptions() will return null
+java.lang.IllegalArgumentException: populate_io_cache_on_flush is not a column defined in this metadata
+	at com.datastax.driver.core.ColumnDefinitions.getAllIdx(ColumnDefinitions.java:273) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ColumnDefinitions.getFirstIdx(ColumnDefinitions.java:279) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ArrayBackedRow.isNull(ArrayBackedRow.java:56) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata$Options.<init>(TableMetadata.java:529) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata.build(TableMetadata.java:119) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.buildTableMetadata(Metadata.java:131) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.rebuildSchema(Metadata.java:92) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.refreshSchema(ControlConnection.java:293) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.tryConnect(ControlConnection.java:230) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.reconnectInternal(ControlConnection.java:170) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.connect(ControlConnection.java:78) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster$Manager.init(Cluster.java:1029) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.init(Cluster.java:120) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:197) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:225) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.example.Main.main(Main.java:32) ~[main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0-ea]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.8.0-ea]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0-ea]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0-ea]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) ~[idea_rt.jar:na]
+ERROR [main] 2015-05-18 23:59:57,474 TableMetadata.java:123 - Error parsing schema options for table system.compactions_in_progress: Cluster.getMetadata().getKeyspace("system").getTable("compactions_in_progress").getOptions() will return null
+java.lang.IllegalArgumentException: populate_io_cache_on_flush is not a column defined in this metadata
+	at com.datastax.driver.core.ColumnDefinitions.getAllIdx(ColumnDefinitions.java:273) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ColumnDefinitions.getFirstIdx(ColumnDefinitions.java:279) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ArrayBackedRow.isNull(ArrayBackedRow.java:56) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata$Options.<init>(TableMetadata.java:529) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata.build(TableMetadata.java:119) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.buildTableMetadata(Metadata.java:131) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.rebuildSchema(Metadata.java:92) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.refreshSchema(ControlConnection.java:293) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.tryConnect(ControlConnection.java:230) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.reconnectInternal(ControlConnection.java:170) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.connect(ControlConnection.java:78) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster$Manager.init(Cluster.java:1029) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.init(Cluster.java:120) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:197) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:225) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.example.Main.main(Main.java:32) ~[main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0-ea]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.8.0-ea]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0-ea]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0-ea]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) ~[idea_rt.jar:na]
+ERROR [main] 2015-05-18 23:59:57,475 TableMetadata.java:123 - Error parsing schema options for table system.hints: Cluster.getMetadata().getKeyspace("system").getTable("hints").getOptions() will return null
+java.lang.IllegalArgumentException: populate_io_cache_on_flush is not a column defined in this metadata
+	at com.datastax.driver.core.ColumnDefinitions.getAllIdx(ColumnDefinitions.java:273) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ColumnDefinitions.getFirstIdx(ColumnDefinitions.java:279) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ArrayBackedRow.isNull(ArrayBackedRow.java:56) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata$Options.<init>(TableMetadata.java:529) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata.build(TableMetadata.java:119) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.buildTableMetadata(Metadata.java:131) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.rebuildSchema(Metadata.java:92) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.refreshSchema(ControlConnection.java:293) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.tryConnect(ControlConnection.java:230) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.reconnectInternal(ControlConnection.java:170) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.connect(ControlConnection.java:78) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster$Manager.init(Cluster.java:1029) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.init(Cluster.java:120) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:197) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:225) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.example.Main.main(Main.java:32) ~[main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0-ea]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.8.0-ea]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0-ea]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0-ea]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) ~[idea_rt.jar:na]
+ERROR [main] 2015-05-18 23:59:57,476 TableMetadata.java:123 - Error parsing schema options for table system.local: Cluster.getMetadata().getKeyspace("system").getTable("local").getOptions() will return null
+java.lang.IllegalArgumentException: populate_io_cache_on_flush is not a column defined in this metadata
+	at com.datastax.driver.core.ColumnDefinitions.getAllIdx(ColumnDefinitions.java:273) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ColumnDefinitions.getFirstIdx(ColumnDefinitions.java:279) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ArrayBackedRow.isNull(ArrayBackedRow.java:56) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata$Options.<init>(TableMetadata.java:529) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata.build(TableMetadata.java:119) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.buildTableMetadata(Metadata.java:131) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.rebuildSchema(Metadata.java:92) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.refreshSchema(ControlConnection.java:293) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.tryConnect(ControlConnection.java:230) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.reconnectInternal(ControlConnection.java:170) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.connect(ControlConnection.java:78) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster$Manager.init(Cluster.java:1029) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.init(Cluster.java:120) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:197) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:225) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.example.Main.main(Main.java:32) ~[main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0-ea]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.8.0-ea]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0-ea]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0-ea]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) ~[idea_rt.jar:na]
+ERROR [main] 2015-05-18 23:59:57,477 TableMetadata.java:123 - Error parsing schema options for table system.paxos: Cluster.getMetadata().getKeyspace("system").getTable("paxos").getOptions() will return null
+java.lang.IllegalArgumentException: populate_io_cache_on_flush is not a column defined in this metadata
+	at com.datastax.driver.core.ColumnDefinitions.getAllIdx(ColumnDefinitions.java:273) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ColumnDefinitions.getFirstIdx(ColumnDefinitions.java:279) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ArrayBackedRow.isNull(ArrayBackedRow.java:56) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata$Options.<init>(TableMetadata.java:529) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata.build(TableMetadata.java:119) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.buildTableMetadata(Metadata.java:131) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.rebuildSchema(Metadata.java:92) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.refreshSchema(ControlConnection.java:293) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.tryConnect(ControlConnection.java:230) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.reconnectInternal(ControlConnection.java:170) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.connect(ControlConnection.java:78) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster$Manager.init(Cluster.java:1029) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.init(Cluster.java:120) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:197) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:225) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.example.Main.main(Main.java:32) ~[main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0-ea]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.8.0-ea]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0-ea]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0-ea]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) ~[idea_rt.jar:na]
+ERROR [main] 2015-05-18 23:59:57,478 TableMetadata.java:123 - Error parsing schema options for table system.peer_events: Cluster.getMetadata().getKeyspace("system").getTable("peer_events").getOptions() will return null
+java.lang.IllegalArgumentException: populate_io_cache_on_flush is not a column defined in this metadata
+	at com.datastax.driver.core.ColumnDefinitions.getAllIdx(ColumnDefinitions.java:273) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ColumnDefinitions.getFirstIdx(ColumnDefinitions.java:279) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ArrayBackedRow.isNull(ArrayBackedRow.java:56) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata$Options.<init>(TableMetadata.java:529) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata.build(TableMetadata.java:119) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.buildTableMetadata(Metadata.java:131) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.rebuildSchema(Metadata.java:92) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.refreshSchema(ControlConnection.java:293) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.tryConnect(ControlConnection.java:230) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.reconnectInternal(ControlConnection.java:170) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.connect(ControlConnection.java:78) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster$Manager.init(Cluster.java:1029) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.init(Cluster.java:120) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:197) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:225) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.example.Main.main(Main.java:32) ~[main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0-ea]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.8.0-ea]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0-ea]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0-ea]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) ~[idea_rt.jar:na]
+ERROR [main] 2015-05-18 23:59:57,479 TableMetadata.java:123 - Error parsing schema options for table system.peers: Cluster.getMetadata().getKeyspace("system").getTable("peers").getOptions() will return null
+java.lang.IllegalArgumentException: populate_io_cache_on_flush is not a column defined in this metadata
+	at com.datastax.driver.core.ColumnDefinitions.getAllIdx(ColumnDefinitions.java:273) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ColumnDefinitions.getFirstIdx(ColumnDefinitions.java:279) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ArrayBackedRow.isNull(ArrayBackedRow.java:56) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata$Options.<init>(TableMetadata.java:529) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata.build(TableMetadata.java:119) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.buildTableMetadata(Metadata.java:131) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.rebuildSchema(Metadata.java:92) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.refreshSchema(ControlConnection.java:293) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.tryConnect(ControlConnection.java:230) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.reconnectInternal(ControlConnection.java:170) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.connect(ControlConnection.java:78) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster$Manager.init(Cluster.java:1029) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.init(Cluster.java:120) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:197) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:225) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.example.Main.main(Main.java:32) ~[main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0-ea]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.8.0-ea]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0-ea]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0-ea]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) ~[idea_rt.jar:na]
+ERROR [main] 2015-05-18 23:59:57,479 TableMetadata.java:123 - Error parsing schema options for table system.range_xfers: Cluster.getMetadata().getKeyspace("system").getTable("range_xfers").getOptions() will return null
+java.lang.IllegalArgumentException: populate_io_cache_on_flush is not a column defined in this metadata
+	at com.datastax.driver.core.ColumnDefinitions.getAllIdx(ColumnDefinitions.java:273) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ColumnDefinitions.getFirstIdx(ColumnDefinitions.java:279) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ArrayBackedRow.isNull(ArrayBackedRow.java:56) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata$Options.<init>(TableMetadata.java:529) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata.build(TableMetadata.java:119) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.buildTableMetadata(Metadata.java:131) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.rebuildSchema(Metadata.java:92) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.refreshSchema(ControlConnection.java:293) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.tryConnect(ControlConnection.java:230) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.reconnectInternal(ControlConnection.java:170) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.connect(ControlConnection.java:78) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster$Manager.init(Cluster.java:1029) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.init(Cluster.java:120) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:197) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:225) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.example.Main.main(Main.java:32) ~[main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0-ea]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.8.0-ea]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0-ea]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0-ea]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) ~[idea_rt.jar:na]
+ERROR [main] 2015-05-18 23:59:57,480 TableMetadata.java:123 - Error parsing schema options for table system.schema_columnfamilies: Cluster.getMetadata().getKeyspace("system").getTable("schema_columnfamilies").getOptions() will return null
+java.lang.IllegalArgumentException: populate_io_cache_on_flush is not a column defined in this metadata
+	at com.datastax.driver.core.ColumnDefinitions.getAllIdx(ColumnDefinitions.java:273) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ColumnDefinitions.getFirstIdx(ColumnDefinitions.java:279) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ArrayBackedRow.isNull(ArrayBackedRow.java:56) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata$Options.<init>(TableMetadata.java:529) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata.build(TableMetadata.java:119) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.buildTableMetadata(Metadata.java:131) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.rebuildSchema(Metadata.java:92) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.refreshSchema(ControlConnection.java:293) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.tryConnect(ControlConnection.java:230) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.reconnectInternal(ControlConnection.java:170) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.connect(ControlConnection.java:78) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster$Manager.init(Cluster.java:1029) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.init(Cluster.java:120) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:197) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:225) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.example.Main.main(Main.java:32) ~[main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0-ea]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.8.0-ea]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0-ea]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0-ea]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) ~[idea_rt.jar:na]
+ERROR [main] 2015-05-18 23:59:57,481 TableMetadata.java:123 - Error parsing schema options for table system.schema_columns: Cluster.getMetadata().getKeyspace("system").getTable("schema_columns").getOptions() will return null
+java.lang.IllegalArgumentException: populate_io_cache_on_flush is not a column defined in this metadata
+	at com.datastax.driver.core.ColumnDefinitions.getAllIdx(ColumnDefinitions.java:273) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ColumnDefinitions.getFirstIdx(ColumnDefinitions.java:279) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ArrayBackedRow.isNull(ArrayBackedRow.java:56) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata$Options.<init>(TableMetadata.java:529) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata.build(TableMetadata.java:119) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.buildTableMetadata(Metadata.java:131) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.rebuildSchema(Metadata.java:92) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.refreshSchema(ControlConnection.java:293) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.tryConnect(ControlConnection.java:230) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.reconnectInternal(ControlConnection.java:170) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.connect(ControlConnection.java:78) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster$Manager.init(Cluster.java:1029) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.init(Cluster.java:120) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:197) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:225) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.example.Main.main(Main.java:32) ~[main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0-ea]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.8.0-ea]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0-ea]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0-ea]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) ~[idea_rt.jar:na]
+ERROR [main] 2015-05-18 23:59:57,482 TableMetadata.java:123 - Error parsing schema options for table system.schema_keyspaces: Cluster.getMetadata().getKeyspace("system").getTable("schema_keyspaces").getOptions() will return null
+java.lang.IllegalArgumentException: populate_io_cache_on_flush is not a column defined in this metadata
+	at com.datastax.driver.core.ColumnDefinitions.getAllIdx(ColumnDefinitions.java:273) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ColumnDefinitions.getFirstIdx(ColumnDefinitions.java:279) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ArrayBackedRow.isNull(ArrayBackedRow.java:56) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata$Options.<init>(TableMetadata.java:529) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata.build(TableMetadata.java:119) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.buildTableMetadata(Metadata.java:131) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.rebuildSchema(Metadata.java:92) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.refreshSchema(ControlConnection.java:293) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.tryConnect(ControlConnection.java:230) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.reconnectInternal(ControlConnection.java:170) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.connect(ControlConnection.java:78) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster$Manager.init(Cluster.java:1029) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.init(Cluster.java:120) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:197) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:225) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.example.Main.main(Main.java:32) ~[main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0-ea]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.8.0-ea]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0-ea]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0-ea]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) ~[idea_rt.jar:na]
+ERROR [main] 2015-05-18 23:59:57,483 TableMetadata.java:123 - Error parsing schema options for table system.schema_triggers: Cluster.getMetadata().getKeyspace("system").getTable("schema_triggers").getOptions() will return null
+java.lang.IllegalArgumentException: populate_io_cache_on_flush is not a column defined in this metadata
+	at com.datastax.driver.core.ColumnDefinitions.getAllIdx(ColumnDefinitions.java:273) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ColumnDefinitions.getFirstIdx(ColumnDefinitions.java:279) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ArrayBackedRow.isNull(ArrayBackedRow.java:56) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata$Options.<init>(TableMetadata.java:529) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata.build(TableMetadata.java:119) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.buildTableMetadata(Metadata.java:131) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.rebuildSchema(Metadata.java:92) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.refreshSchema(ControlConnection.java:293) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.tryConnect(ControlConnection.java:230) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.reconnectInternal(ControlConnection.java:170) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.connect(ControlConnection.java:78) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster$Manager.init(Cluster.java:1029) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.init(Cluster.java:120) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:197) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:225) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.example.Main.main(Main.java:32) ~[main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0-ea]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.8.0-ea]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0-ea]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0-ea]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) ~[idea_rt.jar:na]
+ERROR [main] 2015-05-18 23:59:57,484 TableMetadata.java:123 - Error parsing schema options for table system.schema_usertypes: Cluster.getMetadata().getKeyspace("system").getTable("schema_usertypes").getOptions() will return null
+java.lang.IllegalArgumentException: populate_io_cache_on_flush is not a column defined in this metadata
+	at com.datastax.driver.core.ColumnDefinitions.getAllIdx(ColumnDefinitions.java:273) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ColumnDefinitions.getFirstIdx(ColumnDefinitions.java:279) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ArrayBackedRow.isNull(ArrayBackedRow.java:56) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata$Options.<init>(TableMetadata.java:529) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata.build(TableMetadata.java:119) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.buildTableMetadata(Metadata.java:131) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.rebuildSchema(Metadata.java:92) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.refreshSchema(ControlConnection.java:293) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.tryConnect(ControlConnection.java:230) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.reconnectInternal(ControlConnection.java:170) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.connect(ControlConnection.java:78) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster$Manager.init(Cluster.java:1029) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.init(Cluster.java:120) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:197) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:225) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.example.Main.main(Main.java:32) ~[main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0-ea]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.8.0-ea]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0-ea]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0-ea]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) ~[idea_rt.jar:na]
+ERROR [main] 2015-05-18 23:59:57,487 TableMetadata.java:123 - Error parsing schema options for table system.size_estimates: Cluster.getMetadata().getKeyspace("system").getTable("size_estimates").getOptions() will return null
+java.lang.IllegalArgumentException: populate_io_cache_on_flush is not a column defined in this metadata
+	at com.datastax.driver.core.ColumnDefinitions.getAllIdx(ColumnDefinitions.java:273) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ColumnDefinitions.getFirstIdx(ColumnDefinitions.java:279) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ArrayBackedRow.isNull(ArrayBackedRow.java:56) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata$Options.<init>(TableMetadata.java:529) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata.build(TableMetadata.java:119) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.buildTableMetadata(Metadata.java:131) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.rebuildSchema(Metadata.java:92) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.refreshSchema(ControlConnection.java:293) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.tryConnect(ControlConnection.java:230) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.reconnectInternal(ControlConnection.java:170) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.connect(ControlConnection.java:78) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster$Manager.init(Cluster.java:1029) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.init(Cluster.java:120) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:197) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:225) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.example.Main.main(Main.java:32) ~[main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0-ea]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.8.0-ea]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0-ea]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0-ea]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) ~[idea_rt.jar:na]
+ERROR [main] 2015-05-18 23:59:57,488 TableMetadata.java:123 - Error parsing schema options for table system.sstable_activity: Cluster.getMetadata().getKeyspace("system").getTable("sstable_activity").getOptions() will return null
+java.lang.IllegalArgumentException: populate_io_cache_on_flush is not a column defined in this metadata
+	at com.datastax.driver.core.ColumnDefinitions.getAllIdx(ColumnDefinitions.java:273) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ColumnDefinitions.getFirstIdx(ColumnDefinitions.java:279) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ArrayBackedRow.isNull(ArrayBackedRow.java:56) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata$Options.<init>(TableMetadata.java:529) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata.build(TableMetadata.java:119) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.buildTableMetadata(Metadata.java:131) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.rebuildSchema(Metadata.java:92) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.refreshSchema(ControlConnection.java:293) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.tryConnect(ControlConnection.java:230) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.reconnectInternal(ControlConnection.java:170) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.connect(ControlConnection.java:78) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster$Manager.init(Cluster.java:1029) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.init(Cluster.java:120) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:197) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:225) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.example.Main.main(Main.java:32) ~[main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0-ea]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.8.0-ea]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0-ea]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0-ea]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) ~[idea_rt.jar:na]
+ERROR [main] 2015-05-18 23:59:57,489 TableMetadata.java:123 - Error parsing schema options for table mykeyspace.todolist: Cluster.getMetadata().getKeyspace("mykeyspace").getTable("todolist").getOptions() will return null
+java.lang.IllegalArgumentException: populate_io_cache_on_flush is not a column defined in this metadata
+	at com.datastax.driver.core.ColumnDefinitions.getAllIdx(ColumnDefinitions.java:273) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ColumnDefinitions.getFirstIdx(ColumnDefinitions.java:279) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ArrayBackedRow.isNull(ArrayBackedRow.java:56) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata$Options.<init>(TableMetadata.java:529) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata.build(TableMetadata.java:119) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.buildTableMetadata(Metadata.java:131) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.rebuildSchema(Metadata.java:92) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.refreshSchema(ControlConnection.java:293) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.tryConnect(ControlConnection.java:230) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.reconnectInternal(ControlConnection.java:170) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.connect(ControlConnection.java:78) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster$Manager.init(Cluster.java:1029) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.init(Cluster.java:120) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:197) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:225) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.example.Main.main(Main.java:32) ~[main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0-ea]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.8.0-ea]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0-ea]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0-ea]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) ~[idea_rt.jar:na]
+ERROR [main] 2015-05-18 23:59:57,489 TableMetadata.java:123 - Error parsing schema options for table system_traces.events: Cluster.getMetadata().getKeyspace("system_traces").getTable("events").getOptions() will return null
+java.lang.IllegalArgumentException: populate_io_cache_on_flush is not a column defined in this metadata
+	at com.datastax.driver.core.ColumnDefinitions.getAllIdx(ColumnDefinitions.java:273) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ColumnDefinitions.getFirstIdx(ColumnDefinitions.java:279) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ArrayBackedRow.isNull(ArrayBackedRow.java:56) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata$Options.<init>(TableMetadata.java:529) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata.build(TableMetadata.java:119) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.buildTableMetadata(Metadata.java:131) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.rebuildSchema(Metadata.java:92) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.refreshSchema(ControlConnection.java:293) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.tryConnect(ControlConnection.java:230) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.reconnectInternal(ControlConnection.java:170) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.connect(ControlConnection.java:78) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster$Manager.init(Cluster.java:1029) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.init(Cluster.java:120) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:197) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:225) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.example.Main.main(Main.java:32) ~[main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0-ea]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.8.0-ea]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0-ea]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0-ea]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) ~[idea_rt.jar:na]
+ERROR [main] 2015-05-18 23:59:57,490 TableMetadata.java:123 - Error parsing schema options for table system_traces.sessions: Cluster.getMetadata().getKeyspace("system_traces").getTable("sessions").getOptions() will return null
+java.lang.IllegalArgumentException: populate_io_cache_on_flush is not a column defined in this metadata
+	at com.datastax.driver.core.ColumnDefinitions.getAllIdx(ColumnDefinitions.java:273) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ColumnDefinitions.getFirstIdx(ColumnDefinitions.java:279) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ArrayBackedRow.isNull(ArrayBackedRow.java:56) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata$Options.<init>(TableMetadata.java:529) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata.build(TableMetadata.java:119) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.buildTableMetadata(Metadata.java:131) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.rebuildSchema(Metadata.java:92) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.refreshSchema(ControlConnection.java:293) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.tryConnect(ControlConnection.java:230) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.reconnectInternal(ControlConnection.java:170) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.connect(ControlConnection.java:78) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster$Manager.init(Cluster.java:1029) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.init(Cluster.java:120) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:197) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:225) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.example.Main.main(Main.java:32) ~[main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0-ea]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.8.0-ea]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0-ea]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0-ea]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) ~[idea_rt.jar:na]
+ERROR [main] 2015-05-19 00:01:14,264 TableMetadata.java:123 - Error parsing schema options for table system.IndexInfo: Cluster.getMetadata().getKeyspace("system").getTable("IndexInfo").getOptions() will return null
+java.lang.IllegalArgumentException: populate_io_cache_on_flush is not a column defined in this metadata
+	at com.datastax.driver.core.ColumnDefinitions.getAllIdx(ColumnDefinitions.java:273) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ColumnDefinitions.getFirstIdx(ColumnDefinitions.java:279) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ArrayBackedRow.isNull(ArrayBackedRow.java:56) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata$Options.<init>(TableMetadata.java:529) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata.build(TableMetadata.java:119) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.buildTableMetadata(Metadata.java:131) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.rebuildSchema(Metadata.java:92) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.refreshSchema(ControlConnection.java:293) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.tryConnect(ControlConnection.java:230) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.reconnectInternal(ControlConnection.java:170) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.connect(ControlConnection.java:78) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster$Manager.init(Cluster.java:1029) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.init(Cluster.java:120) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:197) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:225) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.example.Main.main(Main.java:32) ~[main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0-ea]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.8.0-ea]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0-ea]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0-ea]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) ~[idea_rt.jar:na]
+ERROR [main] 2015-05-19 00:01:14,270 TableMetadata.java:123 - Error parsing schema options for table system.batchlog: Cluster.getMetadata().getKeyspace("system").getTable("batchlog").getOptions() will return null
+java.lang.IllegalArgumentException: populate_io_cache_on_flush is not a column defined in this metadata
+	at com.datastax.driver.core.ColumnDefinitions.getAllIdx(ColumnDefinitions.java:273) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ColumnDefinitions.getFirstIdx(ColumnDefinitions.java:279) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ArrayBackedRow.isNull(ArrayBackedRow.java:56) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata$Options.<init>(TableMetadata.java:529) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata.build(TableMetadata.java:119) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.buildTableMetadata(Metadata.java:131) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.rebuildSchema(Metadata.java:92) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.refreshSchema(ControlConnection.java:293) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.tryConnect(ControlConnection.java:230) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.reconnectInternal(ControlConnection.java:170) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.connect(ControlConnection.java:78) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster$Manager.init(Cluster.java:1029) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.init(Cluster.java:120) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:197) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:225) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.example.Main.main(Main.java:32) ~[main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0-ea]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.8.0-ea]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0-ea]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0-ea]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) ~[idea_rt.jar:na]
+ERROR [main] 2015-05-19 00:01:14,273 TableMetadata.java:123 - Error parsing schema options for table system.compaction_history: Cluster.getMetadata().getKeyspace("system").getTable("compaction_history").getOptions() will return null
+java.lang.IllegalArgumentException: populate_io_cache_on_flush is not a column defined in this metadata
+	at com.datastax.driver.core.ColumnDefinitions.getAllIdx(ColumnDefinitions.java:273) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ColumnDefinitions.getFirstIdx(ColumnDefinitions.java:279) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ArrayBackedRow.isNull(ArrayBackedRow.java:56) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata$Options.<init>(TableMetadata.java:529) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata.build(TableMetadata.java:119) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.buildTableMetadata(Metadata.java:131) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.rebuildSchema(Metadata.java:92) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.refreshSchema(ControlConnection.java:293) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.tryConnect(ControlConnection.java:230) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.reconnectInternal(ControlConnection.java:170) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.connect(ControlConnection.java:78) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster$Manager.init(Cluster.java:1029) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.init(Cluster.java:120) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:197) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:225) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.example.Main.main(Main.java:32) ~[main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0-ea]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.8.0-ea]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0-ea]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0-ea]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) ~[idea_rt.jar:na]
+ERROR [main] 2015-05-19 00:01:14,274 TableMetadata.java:123 - Error parsing schema options for table system.compactions_in_progress: Cluster.getMetadata().getKeyspace("system").getTable("compactions_in_progress").getOptions() will return null
+java.lang.IllegalArgumentException: populate_io_cache_on_flush is not a column defined in this metadata
+	at com.datastax.driver.core.ColumnDefinitions.getAllIdx(ColumnDefinitions.java:273) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ColumnDefinitions.getFirstIdx(ColumnDefinitions.java:279) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ArrayBackedRow.isNull(ArrayBackedRow.java:56) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata$Options.<init>(TableMetadata.java:529) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata.build(TableMetadata.java:119) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.buildTableMetadata(Metadata.java:131) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.rebuildSchema(Metadata.java:92) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.refreshSchema(ControlConnection.java:293) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.tryConnect(ControlConnection.java:230) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.reconnectInternal(ControlConnection.java:170) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.connect(ControlConnection.java:78) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster$Manager.init(Cluster.java:1029) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.init(Cluster.java:120) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:197) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:225) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.example.Main.main(Main.java:32) ~[main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0-ea]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.8.0-ea]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0-ea]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0-ea]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) ~[idea_rt.jar:na]
+ERROR [main] 2015-05-19 00:01:14,275 TableMetadata.java:123 - Error parsing schema options for table system.hints: Cluster.getMetadata().getKeyspace("system").getTable("hints").getOptions() will return null
+java.lang.IllegalArgumentException: populate_io_cache_on_flush is not a column defined in this metadata
+	at com.datastax.driver.core.ColumnDefinitions.getAllIdx(ColumnDefinitions.java:273) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ColumnDefinitions.getFirstIdx(ColumnDefinitions.java:279) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ArrayBackedRow.isNull(ArrayBackedRow.java:56) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata$Options.<init>(TableMetadata.java:529) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata.build(TableMetadata.java:119) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.buildTableMetadata(Metadata.java:131) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.rebuildSchema(Metadata.java:92) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.refreshSchema(ControlConnection.java:293) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.tryConnect(ControlConnection.java:230) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.reconnectInternal(ControlConnection.java:170) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.connect(ControlConnection.java:78) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster$Manager.init(Cluster.java:1029) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.init(Cluster.java:120) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:197) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:225) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.example.Main.main(Main.java:32) ~[main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0-ea]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.8.0-ea]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0-ea]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0-ea]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) ~[idea_rt.jar:na]
+ERROR [main] 2015-05-19 00:01:14,276 TableMetadata.java:123 - Error parsing schema options for table system.local: Cluster.getMetadata().getKeyspace("system").getTable("local").getOptions() will return null
+java.lang.IllegalArgumentException: populate_io_cache_on_flush is not a column defined in this metadata
+	at com.datastax.driver.core.ColumnDefinitions.getAllIdx(ColumnDefinitions.java:273) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ColumnDefinitions.getFirstIdx(ColumnDefinitions.java:279) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ArrayBackedRow.isNull(ArrayBackedRow.java:56) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata$Options.<init>(TableMetadata.java:529) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata.build(TableMetadata.java:119) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.buildTableMetadata(Metadata.java:131) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.rebuildSchema(Metadata.java:92) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.refreshSchema(ControlConnection.java:293) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.tryConnect(ControlConnection.java:230) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.reconnectInternal(ControlConnection.java:170) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.connect(ControlConnection.java:78) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster$Manager.init(Cluster.java:1029) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.init(Cluster.java:120) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:197) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:225) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.example.Main.main(Main.java:32) ~[main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0-ea]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.8.0-ea]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0-ea]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0-ea]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) ~[idea_rt.jar:na]
+ERROR [main] 2015-05-19 00:01:14,277 TableMetadata.java:123 - Error parsing schema options for table system.paxos: Cluster.getMetadata().getKeyspace("system").getTable("paxos").getOptions() will return null
+java.lang.IllegalArgumentException: populate_io_cache_on_flush is not a column defined in this metadata
+	at com.datastax.driver.core.ColumnDefinitions.getAllIdx(ColumnDefinitions.java:273) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ColumnDefinitions.getFirstIdx(ColumnDefinitions.java:279) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ArrayBackedRow.isNull(ArrayBackedRow.java:56) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata$Options.<init>(TableMetadata.java:529) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata.build(TableMetadata.java:119) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.buildTableMetadata(Metadata.java:131) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.rebuildSchema(Metadata.java:92) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.refreshSchema(ControlConnection.java:293) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.tryConnect(ControlConnection.java:230) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.reconnectInternal(ControlConnection.java:170) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.connect(ControlConnection.java:78) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster$Manager.init(Cluster.java:1029) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.init(Cluster.java:120) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:197) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:225) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.example.Main.main(Main.java:32) ~[main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0-ea]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.8.0-ea]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0-ea]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0-ea]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) ~[idea_rt.jar:na]
+ERROR [main] 2015-05-19 00:01:14,278 TableMetadata.java:123 - Error parsing schema options for table system.peer_events: Cluster.getMetadata().getKeyspace("system").getTable("peer_events").getOptions() will return null
+java.lang.IllegalArgumentException: populate_io_cache_on_flush is not a column defined in this metadata
+	at com.datastax.driver.core.ColumnDefinitions.getAllIdx(ColumnDefinitions.java:273) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ColumnDefinitions.getFirstIdx(ColumnDefinitions.java:279) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ArrayBackedRow.isNull(ArrayBackedRow.java:56) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata$Options.<init>(TableMetadata.java:529) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata.build(TableMetadata.java:119) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.buildTableMetadata(Metadata.java:131) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.rebuildSchema(Metadata.java:92) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.refreshSchema(ControlConnection.java:293) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.tryConnect(ControlConnection.java:230) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.reconnectInternal(ControlConnection.java:170) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.connect(ControlConnection.java:78) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster$Manager.init(Cluster.java:1029) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.init(Cluster.java:120) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:197) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:225) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.example.Main.main(Main.java:32) ~[main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0-ea]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.8.0-ea]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0-ea]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0-ea]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) ~[idea_rt.jar:na]
+ERROR [main] 2015-05-19 00:01:14,279 TableMetadata.java:123 - Error parsing schema options for table system.peers: Cluster.getMetadata().getKeyspace("system").getTable("peers").getOptions() will return null
+java.lang.IllegalArgumentException: populate_io_cache_on_flush is not a column defined in this metadata
+	at com.datastax.driver.core.ColumnDefinitions.getAllIdx(ColumnDefinitions.java:273) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ColumnDefinitions.getFirstIdx(ColumnDefinitions.java:279) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ArrayBackedRow.isNull(ArrayBackedRow.java:56) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata$Options.<init>(TableMetadata.java:529) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata.build(TableMetadata.java:119) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.buildTableMetadata(Metadata.java:131) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.rebuildSchema(Metadata.java:92) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.refreshSchema(ControlConnection.java:293) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.tryConnect(ControlConnection.java:230) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.reconnectInternal(ControlConnection.java:170) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.connect(ControlConnection.java:78) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster$Manager.init(Cluster.java:1029) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.init(Cluster.java:120) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:197) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:225) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.example.Main.main(Main.java:32) ~[main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0-ea]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.8.0-ea]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0-ea]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0-ea]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) ~[idea_rt.jar:na]
+ERROR [main] 2015-05-19 00:01:14,280 TableMetadata.java:123 - Error parsing schema options for table system.range_xfers: Cluster.getMetadata().getKeyspace("system").getTable("range_xfers").getOptions() will return null
+java.lang.IllegalArgumentException: populate_io_cache_on_flush is not a column defined in this metadata
+	at com.datastax.driver.core.ColumnDefinitions.getAllIdx(ColumnDefinitions.java:273) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ColumnDefinitions.getFirstIdx(ColumnDefinitions.java:279) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ArrayBackedRow.isNull(ArrayBackedRow.java:56) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata$Options.<init>(TableMetadata.java:529) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata.build(TableMetadata.java:119) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.buildTableMetadata(Metadata.java:131) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.rebuildSchema(Metadata.java:92) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.refreshSchema(ControlConnection.java:293) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.tryConnect(ControlConnection.java:230) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.reconnectInternal(ControlConnection.java:170) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.connect(ControlConnection.java:78) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster$Manager.init(Cluster.java:1029) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.init(Cluster.java:120) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:197) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:225) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.example.Main.main(Main.java:32) ~[main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0-ea]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.8.0-ea]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0-ea]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0-ea]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) ~[idea_rt.jar:na]
+ERROR [main] 2015-05-19 00:01:14,281 TableMetadata.java:123 - Error parsing schema options for table system.schema_columnfamilies: Cluster.getMetadata().getKeyspace("system").getTable("schema_columnfamilies").getOptions() will return null
+java.lang.IllegalArgumentException: populate_io_cache_on_flush is not a column defined in this metadata
+	at com.datastax.driver.core.ColumnDefinitions.getAllIdx(ColumnDefinitions.java:273) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ColumnDefinitions.getFirstIdx(ColumnDefinitions.java:279) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ArrayBackedRow.isNull(ArrayBackedRow.java:56) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata$Options.<init>(TableMetadata.java:529) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata.build(TableMetadata.java:119) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.buildTableMetadata(Metadata.java:131) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.rebuildSchema(Metadata.java:92) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.refreshSchema(ControlConnection.java:293) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.tryConnect(ControlConnection.java:230) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.reconnectInternal(ControlConnection.java:170) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.connect(ControlConnection.java:78) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster$Manager.init(Cluster.java:1029) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.init(Cluster.java:120) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:197) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:225) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.example.Main.main(Main.java:32) ~[main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0-ea]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.8.0-ea]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0-ea]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0-ea]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) ~[idea_rt.jar:na]
+ERROR [main] 2015-05-19 00:01:14,282 TableMetadata.java:123 - Error parsing schema options for table system.schema_columns: Cluster.getMetadata().getKeyspace("system").getTable("schema_columns").getOptions() will return null
+java.lang.IllegalArgumentException: populate_io_cache_on_flush is not a column defined in this metadata
+	at com.datastax.driver.core.ColumnDefinitions.getAllIdx(ColumnDefinitions.java:273) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ColumnDefinitions.getFirstIdx(ColumnDefinitions.java:279) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ArrayBackedRow.isNull(ArrayBackedRow.java:56) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata$Options.<init>(TableMetadata.java:529) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata.build(TableMetadata.java:119) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.buildTableMetadata(Metadata.java:131) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.rebuildSchema(Metadata.java:92) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.refreshSchema(ControlConnection.java:293) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.tryConnect(ControlConnection.java:230) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.reconnectInternal(ControlConnection.java:170) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.connect(ControlConnection.java:78) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster$Manager.init(Cluster.java:1029) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.init(Cluster.java:120) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:197) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:225) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.example.Main.main(Main.java:32) ~[main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0-ea]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.8.0-ea]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0-ea]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0-ea]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) ~[idea_rt.jar:na]
+ERROR [main] 2015-05-19 00:01:14,283 TableMetadata.java:123 - Error parsing schema options for table system.schema_keyspaces: Cluster.getMetadata().getKeyspace("system").getTable("schema_keyspaces").getOptions() will return null
+java.lang.IllegalArgumentException: populate_io_cache_on_flush is not a column defined in this metadata
+	at com.datastax.driver.core.ColumnDefinitions.getAllIdx(ColumnDefinitions.java:273) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ColumnDefinitions.getFirstIdx(ColumnDefinitions.java:279) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ArrayBackedRow.isNull(ArrayBackedRow.java:56) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata$Options.<init>(TableMetadata.java:529) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata.build(TableMetadata.java:119) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.buildTableMetadata(Metadata.java:131) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.rebuildSchema(Metadata.java:92) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.refreshSchema(ControlConnection.java:293) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.tryConnect(ControlConnection.java:230) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.reconnectInternal(ControlConnection.java:170) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.connect(ControlConnection.java:78) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster$Manager.init(Cluster.java:1029) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.init(Cluster.java:120) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:197) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:225) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.example.Main.main(Main.java:32) ~[main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0-ea]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.8.0-ea]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0-ea]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0-ea]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) ~[idea_rt.jar:na]
+ERROR [main] 2015-05-19 00:01:14,284 TableMetadata.java:123 - Error parsing schema options for table system.schema_triggers: Cluster.getMetadata().getKeyspace("system").getTable("schema_triggers").getOptions() will return null
+java.lang.IllegalArgumentException: populate_io_cache_on_flush is not a column defined in this metadata
+	at com.datastax.driver.core.ColumnDefinitions.getAllIdx(ColumnDefinitions.java:273) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ColumnDefinitions.getFirstIdx(ColumnDefinitions.java:279) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ArrayBackedRow.isNull(ArrayBackedRow.java:56) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata$Options.<init>(TableMetadata.java:529) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata.build(TableMetadata.java:119) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.buildTableMetadata(Metadata.java:131) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.rebuildSchema(Metadata.java:92) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.refreshSchema(ControlConnection.java:293) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.tryConnect(ControlConnection.java:230) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.reconnectInternal(ControlConnection.java:170) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.connect(ControlConnection.java:78) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster$Manager.init(Cluster.java:1029) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.init(Cluster.java:120) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:197) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:225) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.example.Main.main(Main.java:32) ~[main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0-ea]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.8.0-ea]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0-ea]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0-ea]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) ~[idea_rt.jar:na]
+ERROR [main] 2015-05-19 00:01:14,285 TableMetadata.java:123 - Error parsing schema options for table system.schema_usertypes: Cluster.getMetadata().getKeyspace("system").getTable("schema_usertypes").getOptions() will return null
+java.lang.IllegalArgumentException: populate_io_cache_on_flush is not a column defined in this metadata
+	at com.datastax.driver.core.ColumnDefinitions.getAllIdx(ColumnDefinitions.java:273) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ColumnDefinitions.getFirstIdx(ColumnDefinitions.java:279) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ArrayBackedRow.isNull(ArrayBackedRow.java:56) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata$Options.<init>(TableMetadata.java:529) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata.build(TableMetadata.java:119) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.buildTableMetadata(Metadata.java:131) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.rebuildSchema(Metadata.java:92) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.refreshSchema(ControlConnection.java:293) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.tryConnect(ControlConnection.java:230) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.reconnectInternal(ControlConnection.java:170) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.connect(ControlConnection.java:78) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster$Manager.init(Cluster.java:1029) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.init(Cluster.java:120) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:197) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:225) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.example.Main.main(Main.java:32) ~[main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0-ea]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.8.0-ea]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0-ea]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0-ea]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) ~[idea_rt.jar:na]
+ERROR [main] 2015-05-19 00:01:14,288 TableMetadata.java:123 - Error parsing schema options for table system.size_estimates: Cluster.getMetadata().getKeyspace("system").getTable("size_estimates").getOptions() will return null
+java.lang.IllegalArgumentException: populate_io_cache_on_flush is not a column defined in this metadata
+	at com.datastax.driver.core.ColumnDefinitions.getAllIdx(ColumnDefinitions.java:273) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ColumnDefinitions.getFirstIdx(ColumnDefinitions.java:279) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ArrayBackedRow.isNull(ArrayBackedRow.java:56) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata$Options.<init>(TableMetadata.java:529) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata.build(TableMetadata.java:119) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.buildTableMetadata(Metadata.java:131) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.rebuildSchema(Metadata.java:92) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.refreshSchema(ControlConnection.java:293) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.tryConnect(ControlConnection.java:230) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.reconnectInternal(ControlConnection.java:170) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.connect(ControlConnection.java:78) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster$Manager.init(Cluster.java:1029) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.init(Cluster.java:120) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:197) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:225) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.example.Main.main(Main.java:32) ~[main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0-ea]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.8.0-ea]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0-ea]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0-ea]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) ~[idea_rt.jar:na]
+ERROR [main] 2015-05-19 00:01:14,289 TableMetadata.java:123 - Error parsing schema options for table system.sstable_activity: Cluster.getMetadata().getKeyspace("system").getTable("sstable_activity").getOptions() will return null
+java.lang.IllegalArgumentException: populate_io_cache_on_flush is not a column defined in this metadata
+	at com.datastax.driver.core.ColumnDefinitions.getAllIdx(ColumnDefinitions.java:273) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ColumnDefinitions.getFirstIdx(ColumnDefinitions.java:279) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ArrayBackedRow.isNull(ArrayBackedRow.java:56) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata$Options.<init>(TableMetadata.java:529) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata.build(TableMetadata.java:119) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.buildTableMetadata(Metadata.java:131) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.rebuildSchema(Metadata.java:92) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.refreshSchema(ControlConnection.java:293) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.tryConnect(ControlConnection.java:230) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.reconnectInternal(ControlConnection.java:170) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.connect(ControlConnection.java:78) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster$Manager.init(Cluster.java:1029) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.init(Cluster.java:120) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:197) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:225) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.example.Main.main(Main.java:32) ~[main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0-ea]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.8.0-ea]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0-ea]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0-ea]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) ~[idea_rt.jar:na]
+ERROR [main] 2015-05-19 00:01:14,290 TableMetadata.java:123 - Error parsing schema options for table mykeyspace.todolist: Cluster.getMetadata().getKeyspace("mykeyspace").getTable("todolist").getOptions() will return null
+java.lang.IllegalArgumentException: populate_io_cache_on_flush is not a column defined in this metadata
+	at com.datastax.driver.core.ColumnDefinitions.getAllIdx(ColumnDefinitions.java:273) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ColumnDefinitions.getFirstIdx(ColumnDefinitions.java:279) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ArrayBackedRow.isNull(ArrayBackedRow.java:56) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata$Options.<init>(TableMetadata.java:529) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata.build(TableMetadata.java:119) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.buildTableMetadata(Metadata.java:131) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.rebuildSchema(Metadata.java:92) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.refreshSchema(ControlConnection.java:293) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.tryConnect(ControlConnection.java:230) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.reconnectInternal(ControlConnection.java:170) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.connect(ControlConnection.java:78) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster$Manager.init(Cluster.java:1029) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.init(Cluster.java:120) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:197) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:225) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.example.Main.main(Main.java:32) ~[main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0-ea]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.8.0-ea]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0-ea]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0-ea]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) ~[idea_rt.jar:na]
+ERROR [main] 2015-05-19 00:01:14,290 TableMetadata.java:123 - Error parsing schema options for table system_traces.events: Cluster.getMetadata().getKeyspace("system_traces").getTable("events").getOptions() will return null
+java.lang.IllegalArgumentException: populate_io_cache_on_flush is not a column defined in this metadata
+	at com.datastax.driver.core.ColumnDefinitions.getAllIdx(ColumnDefinitions.java:273) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ColumnDefinitions.getFirstIdx(ColumnDefinitions.java:279) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ArrayBackedRow.isNull(ArrayBackedRow.java:56) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata$Options.<init>(TableMetadata.java:529) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata.build(TableMetadata.java:119) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.buildTableMetadata(Metadata.java:131) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.rebuildSchema(Metadata.java:92) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.refreshSchema(ControlConnection.java:293) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.tryConnect(ControlConnection.java:230) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.reconnectInternal(ControlConnection.java:170) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.connect(ControlConnection.java:78) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster$Manager.init(Cluster.java:1029) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.init(Cluster.java:120) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:197) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:225) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.example.Main.main(Main.java:32) ~[main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0-ea]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.8.0-ea]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0-ea]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0-ea]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) ~[idea_rt.jar:na]
+ERROR [main] 2015-05-19 00:01:14,291 TableMetadata.java:123 - Error parsing schema options for table system_traces.sessions: Cluster.getMetadata().getKeyspace("system_traces").getTable("sessions").getOptions() will return null
+java.lang.IllegalArgumentException: populate_io_cache_on_flush is not a column defined in this metadata
+	at com.datastax.driver.core.ColumnDefinitions.getAllIdx(ColumnDefinitions.java:273) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ColumnDefinitions.getFirstIdx(ColumnDefinitions.java:279) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ArrayBackedRow.isNull(ArrayBackedRow.java:56) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata$Options.<init>(TableMetadata.java:529) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.TableMetadata.build(TableMetadata.java:119) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.buildTableMetadata(Metadata.java:131) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Metadata.rebuildSchema(Metadata.java:92) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.refreshSchema(ControlConnection.java:293) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.tryConnect(ControlConnection.java:230) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.reconnectInternal(ControlConnection.java:170) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.ControlConnection.connect(ControlConnection.java:78) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster$Manager.init(Cluster.java:1029) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.init(Cluster.java:120) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:197) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.datastax.driver.core.Cluster.connect(Cluster.java:225) ~[cassandra-driver-core-2.0.1.jar:na]
+	at com.example.Main.main(Main.java:32) ~[main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0-ea]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.8.0-ea]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0-ea]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0-ea]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) ~[idea_rt.jar:na]
+INFO  [main] 2015-05-19 00:02:26,560 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 00:02:26,569 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 00:11:08,192 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 00:11:08,197 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 00:21:49,172 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 00:21:49,180 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 00:30:05,821 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 00:30:05,826 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 00:40:33,385 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 00:40:33,389 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 00:42:16,041 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 00:42:16,046 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 00:48:00,166 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 00:48:00,174 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 00:51:21,037 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 00:51:21,042 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 00:53:44,761 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 00:53:44,767 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 00:55:11,348 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 00:55:11,354 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 00:58:09,176 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 00:58:09,182 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 00:59:06,938 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 00:59:06,943 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 01:04:06,894 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 01:04:06,899 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 01:04:40,207 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 01:04:40,213 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 10:55:37,696 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 10:55:37,704 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 11:04:51,678 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 11:04:51,682 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 11:05:33,061 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 11:05:33,066 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 11:06:03,773 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 11:06:03,780 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 11:06:30,390 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 11:06:30,397 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 11:06:51,322 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 11:06:51,327 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 11:07:14,682 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 11:07:14,689 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 11:08:01,461 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 11:08:01,468 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 11:08:10,510 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 11:08:10,518 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 11:08:19,340 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 11:08:19,347 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 11:09:40,897 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 11:09:40,903 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 11:10:14,269 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 11:10:14,275 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 11:11:21,216 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 11:11:21,223 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 11:16:06,387 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 11:16:06,392 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 11:16:51,566 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 11:16:51,571 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 11:19:04,122 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 11:19:04,127 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 11:19:34,730 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 11:19:34,735 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 11:20:48,173 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 11:20:48,180 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 11:22:41,217 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 11:22:41,222 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 11:38:39,857 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 11:38:39,862 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 11:42:43,690 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 11:42:43,694 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 11:43:00,991 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 11:43:00,997 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 11:43:44,815 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 11:43:44,820 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 11:45:10,690 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 11:45:10,695 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 11:45:24,658 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 11:45:24,664 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 11:45:38,661 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 11:45:38,666 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 11:45:53,352 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 11:45:53,359 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 11:47:12,897 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 11:47:12,901 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 11:51:29,458 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 11:51:29,463 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 11:51:50,258 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 11:51:50,263 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 12:01:14,228 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 12:01:14,236 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 12:06:21,697 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 12:06:21,703 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 12:08:34,905 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 12:08:34,909 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 12:09:14,439 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 12:09:14,446 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 12:12:26,332 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 12:12:26,337 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 12:13:10,630 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 12:13:10,635 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 12:13:39,614 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 12:13:39,619 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 12:15:01,816 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 12:15:01,821 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 12:16:00,041 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 12:16:00,046 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 12:21:07,739 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 12:21:07,745 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 12:22:01,344 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 12:22:01,351 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 12:22:32,604 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 12:22:32,611 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 12:22:59,133 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 12:22:59,137 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 12:23:37,321 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 12:23:37,329 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 12:25:52,107 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 12:25:52,111 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 12:26:18,081 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 12:26:18,088 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 12:30:15,127 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 12:30:15,131 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 12:32:01,007 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 12:32:01,012 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 12:32:43,867 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 12:32:43,874 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 12:33:03,808 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 12:33:03,814 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 12:33:55,745 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 12:33:55,749 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 12:36:00,038 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 12:36:00,042 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 12:36:59,963 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 12:36:59,969 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 12:37:51,719 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 12:37:51,726 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 12:38:19,273 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 12:38:19,277 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 12:40:50,149 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 12:40:50,153 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 12:41:07,719 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 12:41:07,724 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 12:41:49,824 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 12:41:49,830 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 12:42:16,238 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 12:42:16,243 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 12:42:43,431 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 12:42:43,437 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 12:43:36,708 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 12:43:36,715 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 12:44:24,801 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 12:44:24,807 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 12:44:35,562 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 12:44:35,568 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 12:45:04,896 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 12:45:04,903 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 12:45:12,597 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 12:45:12,603 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 12:45:27,000 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 12:45:27,009 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 12:46:05,393 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 12:46:05,400 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 12:58:37,945 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 12:58:37,957 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 13:00:15,428 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 13:00:15,434 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 13:00:31,473 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 13:00:31,478 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 13:01:35,624 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 13:01:35,631 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 13:04:42,608 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 13:04:42,612 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 13:06:55,454 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 13:06:55,458 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 13:07:04,767 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 13:07:04,773 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 13:28:11,011 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 13:28:11,015 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 13:29:03,410 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 13:29:03,418 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 13:29:24,022 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 13:29:24,028 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 13:29:29,183 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 13:29:29,190 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 13:30:18,503 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 13:30:18,507 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 13:31:01,854 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 13:31:01,862 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 13:31:46,774 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 13:31:46,778 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 13:32:10,884 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 13:32:10,891 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 13:32:25,074 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 13:32:25,078 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 13:32:28,090 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 13:32:28,098 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 13:33:09,153 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 13:33:09,159 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 13:33:32,301 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 13:33:32,306 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 13:33:40,132 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 13:33:40,137 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 13:33:43,159 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 13:33:43,164 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 13:33:46,362 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 13:33:46,370 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 13:34:21,363 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 13:34:21,368 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 13:35:03,241 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 13:35:03,247 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 13:35:06,265 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 13:35:06,272 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 13:35:22,636 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 13:35:22,641 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 14:06:23,280 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 14:06:23,288 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 14:06:28,265 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 14:06:28,270 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 14:06:31,183 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 14:06:31,190 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 14:07:37,387 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 14:07:37,391 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 14:08:12,650 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 14:08:12,656 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 14:08:30,410 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 14:08:30,416 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 15:23:18,629 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 15:23:18,636 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 15:28:01,116 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 15:28:01,121 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 15:28:47,625 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 15:28:47,632 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 15:31:26,867 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 15:31:26,872 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
+INFO  [main] 2015-05-19 15:48:01,410 DCAwareRoundRobinPolicy.java:198 - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  [main] 2015-05-19 15:48:01,415 Cluster.java:1266 - New Cassandra host /127.0.0.1:9042 added
